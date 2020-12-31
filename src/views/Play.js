@@ -42,7 +42,8 @@ import { DirectionalArrows } from '../containers/DirectionalArrows';
 
 import {
     PlayerAbilitiesContainer as PlayerAbilities,
-    PlayerLevelAndArmorContainer as PlayerLevelAndArmor
+    PlayerLevelAndArmorContainer as PlayerLevelAndArmor,
+    // PlayerCheatsContainer as PlayerCheats
 } from '../containers/Abilities';
 
 import { InventoryContainer as Inventory } from '../containers/Inventory';
@@ -405,6 +406,7 @@ export default props => {
             <RepsonsiveStatsContainer {...props} />
             <Rest {...props} />
             <PlayerLevelAndArmor />
+            {/* <PlayerCheats /> */}
             <PlayerAbilities />
             <Inventory />
             <SpellBook {...props} />

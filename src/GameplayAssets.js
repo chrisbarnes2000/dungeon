@@ -148,6 +148,8 @@ export const GameplayAssets = {
             'You gain experience points as you progress in your adventure. When you reach a certain amount, you level up.',
         ArmorClass:
             'Your Armor Class (AC) shows how well protected you are against the attacks of enemies',
+        // God:
+        //     'You\'re protected against the attacks of enemies',
         // Backpack
         Backpack:
             'You can carry items that are not equipped in your backpack. Depending on the type of backpack you own, you can travel with more or less items.',

@@ -10,6 +10,7 @@ class PlayerLevelAndArmor extends Component {
         const { Player, Styles, MobileScreen, TabletScreen } = {
             ...this.props
         };
+        console.log(this.props);
         return (
             <View
                 style={
@@ -60,6 +61,34 @@ class PlayerLevelAndArmor extends Component {
 }
 export const PlayerLevelAndArmorContainer = connect(mapStateToProps)(
     PlayerLevelAndArmor
+);
+
+class PlayerCheats extends Component {
+    render() {
+        const { Cheats, Styles, MobileScreen, TabletScreen } = {
+            ...this.props
+        };
+        return (
+            <View
+                style={
+                    MobileScreen || TabletScreen
+                        ? Styles.PlayerStats2Block1
+                        : Styles.PlayerStats3
+                }
+                hidden={this.props.MobileScreen ? this.props.HideStats : false}
+            >
+                <View style={Styles.PlayerStat}>
+                    <ToolTip ToolTip={Gameplay.Help.God} style={Styles.Inline}>
+                        <Text>God: </Text>
+                        <Text>{`${Cheats.GodMode}`}</Text>
+                    </ToolTip>
+                </View>
+            </View>
+        );
+    }
+}
+export const PlayerCheatsContainer = connect(mapStateToProps)(
+    PlayerCheats
 );
 
 class PlayerAbilities extends Component {
