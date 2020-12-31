@@ -8,8 +8,8 @@ The source code is available [here](https://github.com/yvesgurcan/dungeon).
 
 _Dungeon!_ is in pre-alpha. Two different versions are released:
 
--   a [stable release](http://dungeon.yvesgurcan.com/stable/)
--   a [dev release](http://dungeon.yvesgurcan.com/dev/).
+- a [stable release](http://dungeon.yvesgurcan.com/stable/)
+- a [dev release](http://dungeon.yvesgurcan.com/dev/).
 
 It is recommended to play the [stable release](http://dungeon.yvesgurcan.com/stable/). Less features are available in this version of the game, but it is also less likely to crash.
 
